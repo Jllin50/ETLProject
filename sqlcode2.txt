@@ -1,0 +1,4 @@
+select j."Population",j."GDP",j."Climate",h."Country",h."Happiness_Score", h."Rates", h."Life Expectancy", h."HDI Rank",h."HumanDevelopmentIndex" 
+from "Jack" j
+inner join "happy_rate_HDI_Life" h on
+trim(j."countries") = trim(h."Country")

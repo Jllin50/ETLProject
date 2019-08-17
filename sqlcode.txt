@@ -1,0 +1,8 @@
+SELECT happiness."Country",
+       happiness."Happiness_Score",
+	   suicide."Rates"
+  FROM happiness
+  JOIN suicide 
+    ON happiness."Country" = suicide."Country"
+	WHERE Happiness."Country"is not NULL;
+   
